@@ -4,13 +4,13 @@ export default {
     paper: "#2e303c",
     paperDark: "rgba(0, 0, 0, 0.38)",
     hover: "#4b4d59",
-    active: "#4b4d59",
+    active: "#373945",
   },
   border: {
     light: "#ccc",
   },
   text: {
-    primary: "rgba(0, 0, 0, 0.87)",
+    primary: "#fbfbfb",
     secondary: "rgba(0, 0, 0, 0.54)",
     disabled: "rgba(0, 0, 0, 0.38)",
   },
@@ -29,7 +29,7 @@ export default {
   },
 
   typography: {
-    fontFamily: "'Lato', sans-serif",
+    fontFamily: "'Poppins', sans-serif",
     fontSize: 14,
     fontWeightLight: 300,
     fontWeightRegular: 400,
