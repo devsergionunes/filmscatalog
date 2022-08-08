@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 import { api } from "../services/api";
 
@@ -38,7 +39,7 @@ export default function useMovies(pageLimit: number) {
       seTotalMovies(response.count);
     } catch (err: any) {
       const error = err.response.data;
-      console.log("Erro ==>", error);
+      toast.error(error || "Erro ao buscar filmes");
     }
   }
   return { movies, getMovies, totalMovies };
